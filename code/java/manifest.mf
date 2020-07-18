@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Main-Class: Main
+
+Name: Main.class
+Java-Bean: True
+
+
+
+
