@@ -1,6 +1,6 @@
-WORKING_DIR=
+WORKING_DIR=C:\Users\kouey\Desktop\corinne
 
-all: java cs cpp py
+all: java cs cpp js py
   @echo done!
 
 cs:
@@ -16,7 +16,11 @@ java:
   make
 
 py:
- cd $(WORKING_DIR)\code\py
+  cd $(WORKING_DIR)\code\py
+  make
+
+js:
+  cd $(WORKING_DIR)\code\js
   make
 
 clean:
@@ -26,6 +30,8 @@ clean:
   make clean
   cd $(WORKING_DIR)\code\java
   make clean
+  cd $(WORKING_DIR)\code\js
+  make clean  
   cd $(WORKING_DIR)\code\py
   make clean
   @echo finished cleaning!
